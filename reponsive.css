@@ -1,0 +1,143 @@
+/* Mobile */
+@media (max-width:740px) {
+    /* common */
+    .text-big{
+        font-size: 15px;
+    }
+    .text-nm{
+        font-size: 12px;
+    }
+    .text-sm{
+        font-size: 10px;
+    }
+    .strong-title{
+        font-size: 22px;
+    }
+    header, header.sticky   {
+        align-items: flex-start !important;
+        padding: 1%;
+        height: 50px;
+    }
+    .detail{
+        margin: 35px 3%;    
+    }
+    /* header menu side*/
+    header ul li a,header.sticky ul li a{
+        padding-bottom: 25px;
+        font-size: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.449) ;
+    }
+    header ul li, header.sticky ul li{
+        padding: 45px 40px;
+        margin-left: -40px;
+        text-align: center;
+    }
+    header ul li:hover, header.sticky ul li:hover{
+        background: #F26522;
+    }
+    #nav-menu{
+        background-color: black;
+        border: 1px solid #F26522;
+        display: block !important;
+        position: fixed;
+        width: 95vw;
+        height: 85vh;
+        justify-content: center !important;
+        margin-top: 60px;
+        background-color: color;
+        transition: all 0.5s;
+        left: -100%;
+        overflow: scroll !important;
+    }
+    #nav-menu.active{
+        left: 10px;
+    }
+    i #btn-nav{
+        display: block;
+    }
+    header .logo img{
+        width: 50%;
+        top: 5px;
+        left: 30vw;
+    }
+    /* header login  */
+    header .login-contain{
+        width: 100%;
+        justify-content: end !important;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    header .btn-login, header.sticky .btn-login{
+        padding: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .btn-login .login-btn-text{
+        display: none;
+    }
+    header .btn-login svg{
+        width: 20px;
+    }
+    /* banner */
+    .banner .slogan{
+        top: 20%;
+    }
+    .banner i{
+        top: 80%;
+        left: 0;
+        text-align: center;
+    }
+    /* news */
+    .contain-about{
+        height: 100px !important;
+        margin-bottom: 50px;
+    }
+    .contain-about img{
+        margin-top: 30px;
+    }
+    .about .text-card{
+        margin-top: -17px;
+        font-size: 13px;
+    }
+    .mobile{
+        display: none;
+    }
+    .discover-card{
+        width: 50%;
+    }
+    .new-card{
+        width: 50%;
+    }
+    .event .card-contain{
+        display: block;
+    }
+    .card-event{
+        width: 95%;
+    }
+    .event-card-text{
+        background-color: #f264223d;
+    }
+    .contact .card-contain{
+        flex-direction: column;
+    }
+    .contact img{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+    .contact-text {
+        line-height: 40px;
+    }
+    .contact-text .contact-link {
+        margin-top: 15px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .lunah, .update{
+        width: 100%;
+        font-size: 9px !important;
+        margin-left: 0px;
+    }
+}
