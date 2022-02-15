@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>USAC VNU-HCMUS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./img/logo.jpg" type="image/icon type">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reponsive.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <i><svg id="btn-nav" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg></i>
+        <header class="col-full contain">
+            <a class="logo" href="#">
+                <img class="absolute" src="./img/logo-svg.svg" alt="Avatar Logo" > 
+            </a>
+            <ul id="nav-menu" class="contain relative">
+                <li class=" text-bolder"><a href="#about-home">VỀ USAC</a></li>
+                <li class=" text-bolder"><a href="#news-home" >TIN TỨC</a></li>
+                <li class=" text-bolder"><a href="#discover-home">KHÁM PHÁ</a></li>
+                <li class=" text-bolder"><a href="#event-home" >SỰ KIỆN</a></li>
+                <li class=" text-bolder"><a href="#contact-home">LIÊN HỆ</a></li>
+            </ul>
+            <div class="login-contain contain relative">
+                <div class="btn-login text-bolder">
+                    <a href="./login/login.html"> 
+                        <div class="login-btn-text contain">ĐĂNG NHẬP</div>
+                        <svg class="contain" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-out-alt" class="svg-inline--fa fa-sign-out-alt fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- banner -->
+        <div class="col-full row-full relative banner">
+            <!-- <img src="./img/home-bg.jpg"> -->
+            <img class="col-half row-half absolute slogan" src="./img/slogan.png">
+            <i class="absolute text text-bolder text-big "> "USAC là CLB thiên văn trường Đại Học Khoa học Tự nhiên - Đại học Quốc Gia TP.HCM"</i>
+        </div>
+        <!-- about -->
+       <div id="about-home" class="bg-2 about">
+            <div class=".text-bolder strong-title"><a>VỀ USAC</a><a href="#"><span class="row text-big border-btn">XEM TẤT CẢ</span></a></div>
+            <p class="detail text-justify bg-black text-big">USAC (viết tắt của University of Science Astronomy Club) là câu lạc bộ thiên văn nghiệp dư trực thuộc khoa Vật lý - Vật lý kỹ thuật trường Đại Học Khoa học Tự nhiên - Đại Học Quốc gia TP.HCM.</p>
+            <div class="card-contain">
+                <a class=" contain-about col-third row-half relative card" href="#">
+                    <img class="fit absolute" src="./img/about-sumenh.jpg">
+                    <div class="text-card text-big absolute text-bolder">MỤC TIÊU & SỨ MỆNH</div>
+                </a>
+                <a class="contain-about col-third row-half relative card" href="#s">
+                    <img class="fit absolute" src="./img/about-lichsu.jpg">
+                    <div class="text-card text-big absolute text-bolder">LỊCH SỬ & THƯƠNG HIỆU</div>
+                </a>
+                <a class="contain-about col-third row-half relative card" href="#">
+                    <img class="fit absolute" src="./img/about-thanhvien.jpg">
+                    <div class="text-card text-big absolute text-bolder">THÀNH VIÊN & LIÊN HỆ</div>
+                </a>
+            </div>
+       </div>
+       <!-- news -->
+       <div id="news-home" class="news">
+            <div class=".text-bolder strong-title"><a>TIN TỨC</a><a href="#"><span class="row text-big border-btn">XEM TẤT CẢ</span></a></div>
+            <p class="detail text-justify bg-black text-big">  USAC luôn mong muốn phần nào đó đưa mọi người đến gần với thiên văn học nghiệp dư và các kiến thức khoa học thường thức. USAC cập nhật những tin tức - thông tin mới và chính xác về tất cả những lĩnh vực liên quan đến thiên văn trong và ngoài nước .</p>
+            <div class="card-contain">
+                <a class=" new-card col-fifth row-half card relative " href="#" >
+                    <div class="fit row-half absolute card-news-after"></div>
+                    <img class="fit relative" src="./img/news-lichthienvan012022.jpg" alt="">
+                    <div class="fit absolute text-nm text-bolder card-news-img-text"></br></br>Lịch thiên văn 01/2022</div>
+                    <div class="news-next absolute col-fifth "><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"/></svg></div>
+                    <div class="card-news-text card text-bolder text-nm">Lịch thiên văn 01/2022</div>
+                    <div class="card-news-date text-sm">02/01/2022</div>
+                </a>
+                <a class=" new-card col-fifth row-half card relative " href="#" >
+                    <div class="fit row-half absolute card-news-after"></div>
+                    <img class="fit relative" src="./img/news-jameswebb.jpg" alt="">
+                    <div class="fit absolute text-nm text-bolder card-news-img-text"></br></br>Kính JAMES WEBB1 </div>
+                    <div class="news-next absolute col-fifth "><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"/></svg></div>
+                    <div class="card-news-text card text-bolder text-nm">Kính JAMES WEBB1</div>
+                    <div class="card-news-date text-sm">25/12/2021</div>
+                </a>
+                <a class= "mobile col-fifth row-half card relative " href="#" >
+                    <div class="fit row-half absolute card-news-after"></div>
+                    <img class="fit relative" src="./img/news-geminids.jpg" alt="">
+                    <div class="fit absolute text-nm text-bolder card-news-img-text"></br></br>Mưa sao băng Geminids </div>
+                    <div class="news-next absolute col-fifth "><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"/></svg></div>
+                    <div class="card-news-text card text-bolder text-nm">Mưa sao băng Geminids</div>
+                    <div class="card-news-date text-sm">15/12/2021</div>
+                </a>
+                <a class= "mobile col-fifth row-half card relative " href="#" >
+                    <div class="fit row-half absolute card-news-after"></div>
+                    <img class="fit relative" src="./img/news-saochoileonard.png" alt="">
+                    <div class="fit absolute text-nm text-bolder card-news-img-text"></br></br>[USAC] Kỷ niệm 5 năm</div>
+                    <div class="news-next absolute col-fifth "><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"/></svg></div>
+                    <div class="card-news-text card text-bolder text-nm">[USAC] KỶ NIỆM 5 NĂM</div>
+                    <div class="card-news-date text-sm">14/12/2021</div>
+                </a>
+                <a class= "mobile col-fifth row-half card relative " href="#" >
+                    <div class="fit row-half absolute card-news-after"></div>
+                    <img class="fit relative" src="./img/news-lichthienvan122021.jpg" alt="">
+                    <div class="fit absolute text-nm text-bolder card-news-img-text"></br></br>Lịch thiên văn 12/2021 </div>
+                    <div class="news-next absolute col-fifth "><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"/></svg></div>
+                    <div class="card-news-text card text-bolder text-nm">Lịch thiên văn 12/2021</div>
+                    <div class="card-news-date text-sm">01/12/2021</div>
+                </a>
+            </div>
+       </div>
+       <!-- discover -->
+       <div id="discover-home" class="bg-2 discover ">
+        <div class=".text-bolder strong-title"><a>KHÁM PHÁ</a><a href="#"><span class="row text-big border-btn">XEM TẤT CẢ</span></a></div>
+        <p class="detail text-justify bg-black text-big">Với tiêu chí “khoa học cho mọi người”, USAC luôn mong muốn được đồng hành với cộng đồng thiên văn học Việt Nam. Lan tỏa kiến thức ở tất cả lĩnh vực liên quan đến thiên văn.</p>
+        <div class="card-contain">
+            <a class="discover-card col-4 " href="#">
+                <img src="./img/dcv-muatrenhanhtinh.png">
+                <div class="discover-text">
+                    <h1 class="text-bolder text-nm">MƯA TRÊN CÁC HÀNH TINH</h1>
+                    <div class="card-discover-date text-sm text-bolder">04/01/2022</div>
+                    <h2 class="text-sm text-justify">Mặt đêm của hành tinh lạnh hơn, “chỉ khoảng” 2.730 độ F (1.500 độ C) – nơi hơi sắt ngưng tụ thành những đám mây. </h2>
+                </div>
+            </a>
+            <a class="discover-card col-4 " href="#">
+                <img src="./img/dcv-lygiac.jpg">
+                <div class="discover-text">
+                    <h1 class="text-bolder text-nm">LY GIÁC, XUNG ĐỐI và GIAO HỘI </h1>
+                    <div class="card-discover-date text-sm text-bolder">27/12/2021</div>
+                    <h2 class="text-sm text-justify">Với chiếc kính viễn vọng trong tay, không gì hợp lý hơn việc hướng ống kính lên bầu trời và săn tìm những “hàng xóm” của Trái Đất – các hành tinh trong “ngôi nhà chung” mang tên Hệ Mặt Trời </h2>
+                </div>
+            </a>
+            <a class="mobile discover-card col-4 " href="#">
+                <img src="./img/dcv-jameweb.jpg">
+                <div class="discover-text">
+                    <h1 class="text-bolder text-nm">NGƯỜI KẾ NHIỆM HUBBLE</h1>
+                    <div class="card-discover-date text-sm text-bolder">22/12/2021</div>
+                    <h2 class="text-sm text-justify">Và thứ được nghiên cứu và phát triển, lựa chọn để thay thế Hubble mang tên: James Webb Space Telescope hay còn được biết với cái tên – Kính viễn vọng Không gian James Webb. </h2>
+                </div>
+            </a>
+            <a class=" mobile discover-card col-4 " href="#">
+                <img src="./img/dcv-cunhaysieuthanh.png">
+                <div class="discover-text">
+                    <h1 class="text-bolder text-nm">CÚ NHẢY SIÊU THANH TỪ RÌA VŨ TRỤ</h1>
+                    <div class="card-discover-date text-sm text-bolder">27/11/2021</div>
+                    <h2 class="text-sm text-justify">Felix lúc ấy 43 tuổi đã trở lại Trái đất và lập 3 kỷ lục mới: trở thành “người đầu tiên phá vỡ rào cản âm thanh khi rơi tự do”, “hoàn thành cú nhảy dù rơi tự do cao nhất“ (38.969,4 m / 127.852 ft) và “đạt được tốc độ nhanh nhất” khi rơi tự do (1.357,6 km / h / 843,6 dặm / giờ).</h2>
+                </div>
+            </a>
+        </div>
+        </div>
+       <!-- event -->
+       <div id="event-home" class="event">
+            <div class=".text-bolder strong-title"><a>SỰ KIỆN</a><a href="#"><span class="row text-big border-btn">XEM TẤT CẢ</span></a></div>
+            <p class="detail text-justify bg-black text-big">USAC là nơi giao lưu, học hỏi của tất cả các bạn sinh viên và lan tỏa kiến thức cùng niềm đam mê thiên văn học đến với các trường phổ thông trên địa bàn TP.HCM.</p>
+            <div class="card-contain">
+                <div class="card-event col-third row" href="#">
+                    <div class="event-card-date text-bolder text-big">CHỦ NHẬT</br> 08 THÁNG 01/2022</div>
+                    <div class="event-card-text">
+                        <a href="#"> <h1 class="text-big">SINH HOẠT CÂU LẠC BỘ</h1></a>
+                        <h2 class="text-nm">Các vật thể sâu</h2>
+                        <a href="#"><p class="text-bolder text-big">THAM GIA</p></a>
+                        <div class="event-date-left text-bolder text-nm">Còn 3 ngày</div>
+                    </div>
+                </div>
+                <div class="card-event col-third row " href="#">
+                    <div class="event-card-date text-bolder text-big disable-card ">CHỦ NHẬT</br> 25 THÁNG 12/2021</div>
+                    <div class="event-card-text">
+                        <a href="#"> <h1 class="text-big">SINH HOẠT CÂU LẠC BỘ</h1></a>
+                        <h2 class="text-nm">Phát xạ kích thích và ứng dụng trong thiên văn</h2>
+                        <p class=" text-bolder text-big disable-card">THAM GIA</p>
+                        <div class="event-date-left text-bolder text-nm disable-card">Đã diễn ra</div>
+                    </div>
+                </div>
+                <div class="mobile card-event col-third discover-card-text" href="#">
+                    <div class="event-card-date text-bolder text-big disable-card">CHỦ NHẬT</br> 18 THÁNG 12/2021</div>
+                    <div class="event-card-text">
+                        <a href="#"><h1 class="text-big">SINH HOẠT CÂU LẠC BỘ</h1></a>
+                        <h2 class="text-nm">Sao Neutron và sao Xung</h2>
+                        <p class=" text-bolder text-big disable-card">THAM GIA</p>
+                        <div class="event-date-left text-bolder text-nm disable-card">Đã diễn ra</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact -->
+        <div id="contact-home" class="bg-2 contact ">
+            <div class=".text-bolder strong-title"><a>LIÊN HỆ</a></div>
+            <p class="detail text-justify bg-black text-big">USAC mong muốn được kết nối với mọi cá nhân, tổ chức với mục đích tốt đẹp để cùng nhau phát triển. Hãy liên hệ với chúng tôi ! </p>
+            <div class="card-contain"> 
+                <img class="" src="./img/contact.jpg" alt="">
+                <div class="contact-text">
+                    <div class="text-nm">
+                       <div class="connect-title" ><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></span>
+                            Facebook: <a href="https://www.facebook.com/clbusac">www.facebook.com/clbusac</a></div>
+                       <div class="connect-title"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></span>
+                            Website: Clb.usac@gmail.com</div>
+                       <div class="connect-title"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg></span>
+                            Gmail: Clb.usac@gmail.com</div>
+                       <div class="connect-title"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone-square-alt" class="svg-inline--fa fa-phone-square-alt fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"/></svg></span>
+                            Phone: +84 949 063 841</div>
+                       <div class="connect-title"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg></span>
+                            Địa chỉ: Trường Đại Học Khoa Học Tự Nhiên TP.HCM</div>
+                            
+                        <div>
+                            <div class="contact-link"><a href="#">LIÊN HỆ TRỰC TIẾP TẠI ĐÂY </a></div>
+                            <div class="contact-link"><a href="#">TẢI ANDROID APP USAC </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer ">
+            <div class="lunah text-nm">@ This website is made with a member of USAC - Lunah (aka NgocHa): <a href="#"><span class="">Contact me </span></a></div>
+            <div class="update text-nm">Updated: 19/01/2022</div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="script.js" ></script>    
+    </body>
+</html>
