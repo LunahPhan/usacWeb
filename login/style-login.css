@@ -18,7 +18,6 @@ li{
 .col-full{
     width: 100vw;
     max-width: 100%;
-    overflow: hidden;
 }
 .absolute{
     position: absolute;
@@ -46,6 +45,12 @@ i #btn-nav{
     position: fixed;
     top: 0;
     left: 0;
+}
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 i svg path{
     width: 100%;
@@ -85,22 +90,30 @@ header ul li:hover{
 /* login-form */
 .loginForm-wrap{
     width: 100%;
-    margin-top: 18vh;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
 }
 .loginForm-contain{
-    width: 500px;
-    height: 550px;
+    width: 80vw;
+    height: 60vh;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 25px;
     box-shadow: 10px 5px 35px 25px rgba(255, 255, 255, 0.35);
     position: relative;
     z-index: 5;
     overflow: hidden;
-    
+    display: flex;
 }
-.loginForm-contain::before{
+.loginText{
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    align-items: center;
+}
+.loginText::before{
     content: '';
     position: absolute;
     top: 0;
@@ -113,37 +126,28 @@ header ul li:hover{
     z-index: 1 ;
     animation: shadowing 5s linear -2s infinite;
 }
-.loginForm-contain::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.12);
-    width: 15%;
-    height: 100%;
-    transform: skewX(-25deg);
-    transform-origin: bottom left;
-    z-index: 1 ;
-    animation: shadowing 5s linear 0s infinite;
+.loginText-contain{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
 }
 @keyframes shadowing {
     from{margin-left: -100%;}
     to{margin-left: 100%;}
 }
 .login-icon svg{
-    margin-top: 7px;
     width: 75px;
     background-color: black;
     border-radius: 50%;
     padding: 5px;
-    margin-left: 215px;
 }
 .login-icon svg path{
     fill: white;
+    
 }
 .sm-text{
     margin-top: 15px;
-    margin-left: 140px;
     font-family: monospace;
     font-size: 20px;
     color: white;
@@ -156,14 +160,20 @@ header ul li:hover{
 }
 .login-text{
     margin-top: 15px;
-    margin-left: 175px;
     font-family: monospace;
     font-size: 35px;
     color: #F26522;
     font-weight: bolder;
 }
+.login-form-contain{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 10vh;
+}
 .login-form{
-    margin-top: 50px;
+    width: 40vw;
     display: flex;
     justify-content: center;
 }
@@ -171,11 +181,12 @@ form .input-group{
     position: relative;
     margin-bottom: 50px;
     z-index: 5;
+    background-color: black;
 }
 form .input-group input{
     width: 100%;
     padding: 10px 0px;
-    font-size: 20px;
+    font-size: 30px;
     background: transparent;
     border: none;
     border-bottom: 1px solid white;
@@ -186,7 +197,7 @@ form .input-group label{
    position: absolute;
    top: 0;
    left: 0;
-   font-size: 20px;
+   font-size: 30px;
    padding: 10px 0px;
    transition: 0.3s ease-out; 
    font-family: monospace;
@@ -197,13 +208,13 @@ form .input-group input:focus + label,
 form .input-group input:valid + label{
     transform: translateY(-35px);
     color: #F26522;
-    font-size: 15px;
+    font-size: 25px;
     z-index: 5;
 }
 .input-group .icon-eye{
     position: absolute;
     top: 15px;
-    left: 210px;
+    left: 300px;
     cursor: pointer;
     z-index: 3 ;
     width: 10%;
@@ -217,10 +228,31 @@ form .input-group input:valid + label{
 .input-group #iconEye{
     display: block;
 }
+.massageLogin{
+    margin-top: -20px;
+}
+.successLogin{
+    display: none;
+    font-family: monospace;
+    font-size: 15px;
+    color: yellow;
+}
+.ErrLogin{
+    display: none;
+    font-family: monospace;
+    font-size: 15px;
+    color: yellow;
+}
+.CatchLogin{
+    display: none;
+    font-family: monospace;
+    font-size: 15px;
+    color: yellow;
+}
 form .login-submit .submit-btn{
     position: relative;
-    margin-left: 80px;
     padding: 10px 10px;
+    margin-top: 20px;
     text-transform: uppercase;
     background-color: #F26522;
     color: white;
@@ -228,17 +260,18 @@ form .login-submit .submit-btn{
     border-radius: 7px;
     cursor: pointer;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 25px;
+    letter-spacing: 3px;
 }
 form .login-submit .submit-btn:hover{
     background-color: #f2642276;
-    color: white;
     z-index: 5;
+    border-radius: 7px;
+    box-shadow: #f2642276 0px 0px 20px 10px;
 }
 form .forgot-pw {
-    position: absolute;
     z-index: 5;
-    bottom: 25px;
-    left: 200px;
     text-decoration: underline;
+    margin-top: 20px ;
+
 }

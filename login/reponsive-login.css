@@ -53,21 +53,48 @@
         margin-top: 10vh;
     }
     .loginForm-contain{
-        width: 100%;
-        height: 550px;
+        width: 100vw;
+        height: 90vh;
         border-radius: 0px;
         box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .loginText{
+        width: 100vw;
     }
     .login-icon svg{
-        margin-left: 40%;
-    }
-    .login-text{
-        margin-left: 30%;
+        width: 50px;
+        margin-top: -30px;
     }
     .sm-text{
-        margin-left: 20%;
+        font-size: 20px;
+    }
+    .login-text{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .login-form{
+        width: 100vw;
+    }
+    form .input-group input{
+        font-size: 15px;
+    }
+    form .input-group label{
+        font-size: 15px;
+    }
+    form .input-group input:focus + label,
+    form .input-group input:valid + label{
+    font-size: 15px;
+    }
+    .input-group .icon-eye{
+        left: 150px;
+    }
+    form .login-submit .submit-btn{
+        font-size: 15px;
     }
     form .forgot-pw {
-        left: 37%;
+        font-size: 10px;
     }
 }

@@ -1,15 +1,14 @@
-//Collapse header navbar
-window.addEventListener("scroll", function () {
-  var header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0);
-}); 
+
 //Reponsive header navbar
-$(document).ready(function(){
-    $('#btn-nav').click(function(){
-      $('#nav-menu').toggleClass('active');
-    })
-})
-//show hidden password 
+function navResponse(){
+  var nav_menu = document.getElementById('nav-menu');
+    if (nav_menu.className === "nav-menu") {
+      nav_menu.className += " active";
+    } else {
+      nav_menu.className = "nav-menu";
+    }
+}
+//Show hidden password 
 function showPw(){
   const loginPw = document.getElementById('loginPassword');
   const eye = document.getElementById('iconEye');
