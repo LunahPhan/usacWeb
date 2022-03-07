@@ -62,7 +62,7 @@ async function requestLogin (){
         if(jsonResponseLogin.status === 1 ) {
             // Displaying results to console
           sessionStorage.setItem("New Token", JSON.stringify(jsonResponseLogin.data.token)); 
-          window.location.href = "http://127.0.0.1:5500/profile/profile.html"
+          window.location.href = "https://htmlpreview.github.io/?https://github.com/LunahPhan/webUsac/blob/main/profile/profile.html"
         }
         if(jsonResponseLogin.status !=1) {
           document.getElementById('sLogin').style.display = "none";
