@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+    margin: 0;
+    color: white;
+}
+body{
+    background: url(img/background.jpeg);
+}
+
+/* common */
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* common */
+.col-full{
+    width: 100vw;
+    max-width: 100%;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.text-bolder{
+    font-weight: bolder; 
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* main */
+/* header */
+i #btn-nav{
+    z-index: 500000 ;
+    width: 20px;
+    margin-left: 10px ;
+    display: none;
+    margin-top: 15px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+i svg path{
+    width: 100%;
+    stroke-width: 10px;
+    fill: #F26522;
+}
+header{
+    height: 20vh;
+    top: 0;left: 0;
+    position: fixed;
+    z-index: 100000;
+    padding: 1% 1% 1% 10%;
+    transition: 0.6s;
+}
+header.sticky{
+    background: black;
+    height: 10vh;
+    transition: 0.6s;
+}
+header .logo img{
+    height: 80%;
+    width: 22%; 
+    left: 1%;
+    top: 5%;
+}
+header ul li a{
+    letter-spacing: 0.2vw;  
+    font-size: 1.5vw;
+    padding: 3vw;
+}
+header ul li{
+    padding: 1.5vw 0.5vw;
+}
+header ul li:hover{
+    background: #F26522;
+}
+.content-wrap{
+    margin-top: 20vh;
+    width: 100%;
+}
+.top-content{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 100%;
+}
+.clb-name{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.clb-logo img{
+    width: 100px;
+    margin-top: 30px;
+    border: black dashed 5px;
+    background: white;
+}
+.user-name{
+    margin: 20px;
+}
+.user-finalName{
+    font-size: 30px;
+    font-weight: bolder;
+    color: orangered;
+    margin: 5px;
+}
+.user-firstName{
+    margin: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: orange;
+}
+.more{
+    display: flex;
+}
+.card-more{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 200px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.card-more span svg{
+    stroke: white;
+    fill: white;
+    width: 20px;
+}
+.user-more{
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.department{
+    background: rgba(76, 10, 241, 0.279);
+    padding: 10px;
+    border-radius: 15px;
+}
+.role{
+    background: rgba(255, 68, 0, 0.2);
+    padding: 10px;
+    border-radius: 15px;
+}
+.love{
+    background: rgba(187, 24, 51, 0.3);
+    padding: 10px;
+    border-radius: 15px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    display:  flex;
+    width: 50%;
+    margin: 20px;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.card svg {
+    margin: 20px;
+    stroke-width: 10px;
+    stroke: orange;
+    width: 50px;
+}
+.text{
+    font-size: 25px;
+}
+
