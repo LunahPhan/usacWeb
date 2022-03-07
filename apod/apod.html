@@ -1,0 +1,43 @@
+<!-- Astronomy Picture Of the Day -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>USAC Astronomy Picture Of the Day</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-apod.css">
+        <link rel="stylesheet" href="responsive-apod.css">
+        <script type="text/javascript" src="script-apod.js"></script>
+        <script type="text/javascript" src="script-api-apod.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <i onclick="navResponse()"><svg id="btn-nav"  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg></i>
+        <header class="col-full contain">
+            <a class="logo" href="../index.html">
+                <img class="absolute" src="./img/logo-svg.svg" alt="Avatar Logo" > 
+            </a>
+            <ul id="nav-menu" class="nav-menu" >
+                <li class=" text-bolder"><a href="/index.html#about-home">VỀ USAC</a></li>
+                <li class=" text-bolder"><a href="/index.html#news-home" >TIN TỨC</a></li>
+                <li class=" text-bolder"><a href="/index.html#discover-home">KHÁM PHÁ</a></li>
+                <li class=" text-bolder"><a href="/index.html#event-home" >SỰ KIỆN</a></li>
+                <li class=" text-bolder"><a href="/index.html#contact-home">LIÊN HỆ</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h1 class="caption">Hình ảnh thiên văn hôm nay</h1> 
+                <div class="detail">
+                    <div class="title" id="title">...</div>
+                    <div class="date" id="date">...</div>
+                    <div class="explain" id="explain">...</div>
+                </div>
+               
+            </div>
+            <div class="img">
+                <img src="" alt="" id="apod" width=100%">
+            </div>
+        </div>
+    </body>
+</html>
