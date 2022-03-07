@@ -129,6 +129,12 @@ i #btn-nav{
     margin-top: 15px;
     cursor: pointer;
 }
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 i svg path{
     width: 100%;
     stroke-width: 10px;
@@ -197,11 +203,11 @@ header.sticky ul li a{
 header.sticky ul li{
     padding: 2vw 0.5vw;
 }
-header.sticky .btn-login {
+header.sticky .btn-login a{
     padding: 0.75vw;
     background-color: #F26522;
 }
-header.sticky .btn-login:hover {
+header.sticky .btn-login a:hover {
     background-color: #f2642276;
 
 }
@@ -379,6 +385,9 @@ header.sticky .btn-login:hover {
 .card-discover-date{
     margin: 3% 0%;
     color: wheat;
+}
+.apod{
+    margin-left:  -10px;
 }
 /* contact-LIÊN HỆ */
 .contact img{
